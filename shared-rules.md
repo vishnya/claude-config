@@ -65,3 +65,4 @@ Rachel works across multiple devices (Mac, phone via claude-web, remote server).
 | Polymarket Trends | ~/code/polymarket_trends/ | ~/repos/polymarket-trends/ | polymarket-trends | main |
 | Claude Web | ~/code/claude_web/ | ~/repos/claude-web/ | claude-web | master |
 | Claude Config | ~/code/claude_config/ | ~/repos/claude-config/ | claude-config | main |
+| Shared Auth | — | ~/repos/shared-auth/ | shared-auth | main |
