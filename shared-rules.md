@@ -1,0 +1,67 @@
+## Preferences
+- No emojis unless asked
+- Concise responses
+- Fix things before testing unless I say otherwise
+
+## Workflow — Follow These Automatically
+
+These are standing rules. Do NOT wait for Rachel to remind you.
+
+### Sync
+- **`git pull` before responding** to each user message. This catches changes from other sessions (phone, server, Mac) with no polling overhead. If there are new WORKLOG.md entries, briefly mention what the other session did.
+
+### Commits
+- **Commit early and often.** After every meaningful change (new feature, bug fix, refactor, test additions), commit immediately. Do not batch up multiple unrelated changes.
+- **Commit before and after** risky operations so work is reversible.
+- No "Co-Authored-By: Claude" or LLM attribution. No "Generated with Claude Code" footers.
+- Commit messages: short, lowercase, imperative mood (e.g. "add cookie auth", "fix mobile reauth loop").
+
+### Tests
+- **Always run existing tests** before pushing to catch regressions.
+- **Write tests for new functionality** — don't wait to be asked. If you add a feature or fix a bug, add tests covering it.
+- If tests fail, fix the issue before moving on.
+
+### Pushing
+- After committing, **push to GitHub** immediately.
+- On Mac, push via subtree: `git subtree push --prefix=<folder> <remote-name> main`
+- If subtree push fails with non-fast-forward: `git subtree split --prefix=<folder> -b temp && git push <remote> temp:main --force && git branch -D temp`
+
+### WORKLOG.md
+- **Update on every commit**, not just at session end. Append a short entry (date, device, bullets).
+- Push after updating so other devices see it immediately.
+- Keep only the last 10 entries.
+
+### New project checklist
+When starting work on a new project/folder, ensure it has:
+- `CLAUDE.md` — project-specific instructions, architecture, key files, test commands
+- `WORKLOG.md` — session handoff notes
+- `.gitignore` — appropriate for the language/framework
+- Tests — at minimum a test file and instructions in CLAUDE.md for running them
+- Git remote — added to the projects/remotes table
+
+## Cross-Session Awareness
+
+Rachel works across multiple devices (Mac, phone via claude-web, remote server). Every project has a `WORKLOG.md` for handoff between sessions.
+
+### On session start (ALWAYS do this):
+1. `git pull` to get latest
+2. For the project you're working on, read its `WORKLOG.md`
+3. Briefly tell Rachel what the last session did (especially if it was on a different device)
+
+### During the session:
+- On every meaningful commit, update `WORKLOG.md` and push — this is automatic, not optional
+- If switching projects mid-session, read the new project's `WORKLOG.md` first
+
+### On session end:
+- Ensure `WORKLOG.md` is up to date and pushed
+- Keep only the last 10 entries
+
+## Projects
+
+| Project | Mac path | Server path | Remote | Branch |
+|---------|----------|-------------|--------|--------|
+| Locus | ~/code/locus/ | ~/repos/locus/ | locus | main |
+| Anki Fox | ~/code/anki_fox/ | ~/repos/anki-fox/ | anki-fox | main |
+| Polymarket Trends | ~/code/polymarket_trends/ | ~/repos/polymarket-trends/ | polymarket-trends | main |
+| Claude Web | ~/code/claude_web/ | ~/repos/claude-web/ | claude-web | master |
+| Claude Config | ~/code/claude_config/ | ~/repos/claude-config/ | claude-config | main |
