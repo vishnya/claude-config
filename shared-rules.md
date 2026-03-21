@@ -53,6 +53,15 @@ Rachel works across multiple devices (Mac, phone via claude-web, remote server).
 - On every meaningful commit, update `WORKLOG.md` and push — this is automatic, not optional
 - If switching projects mid-session, read the new project's `WORKLOG.md` first
 
+### Anki cards for concepts
+- When a system design or AI concept comes up during work, create Anki cards:
+  - **On Mac:** `python ~/code/anki_fox/claude_cards.py "concept" "definition" "example" [--type sysdesign|ai]`
+  - **On server:** `python ~/repos/anki-fox/claude_cards_queue.py "concept" "definition" "example" [--type sysdesign|ai]` (queues for later sync)
+- Cards go to "Claude System Design Learnings" (or "Claude AI Learnings" for AI concepts)
+- Cards are bidirectional: one tests vocabulary (what is X?), the other tests pattern recognition (what concept solves this problem?)
+- Include full context in the example: what the problem was, what the concept solved, and what project it was in
+- Do this proactively whenever you explain a concept — don't wait to be asked
+
 ### On session end:
 - Ensure `WORKLOG.md` is up to date and pushed
 - Keep only the last 10 entries
@@ -64,6 +73,6 @@ Rachel works across multiple devices (Mac, phone via claude-web, remote server).
 | Locus | ~/code/locus/ | ~/repos/locus/ | locus | main |
 | Anki Fox | ~/code/anki_fox/ | ~/repos/anki-fox/ | anki-fox | main |
 | Polymarket Trends | ~/code/polymarket_trends/ | ~/repos/polymarket-trends/ | polymarket-trends | main |
-| Claude Web | ~/code/claude_web/ | ~/repos/claude-web/ | claude-web | master |
+| Walkie | ~/code/walkie/ | ~/repos/walkie/ | walkie | master |
 | Claude Config | ~/code/claude_config/ | ~/repos/claude-config/ | claude-config | main |
 | Shared Auth | — | ~/repos/shared-auth/ | shared-auth | main |
