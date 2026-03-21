@@ -2,6 +2,7 @@
 - No emojis unless asked
 - Concise responses
 - Fix things before testing unless I say otherwise
+- When explaining decisions or writing code, tie back to fundamental system design or AI concepts (e.g., "this is the producer-consumer pattern", "this is defense in depth"). Explain as if to a smart high schooler — Rachel is an ML engineer but rusty on system design. Keep explanations brief (1-2 sentences), not condescending.
 
 ## Workflow — Follow These Automatically
 
