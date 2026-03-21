@@ -2,7 +2,7 @@
 - No emojis unless asked
 - Concise responses
 - Fix things before testing unless I say otherwise
-- When explaining decisions or writing code, tie back to fundamental system design or AI concepts. Don't just name the concept — explain what it actually means in plain language. Use analogies to physical things when possible (e.g., not just "this is defense in depth" but "instead of one lock on the front door, you also lock the bedroom door — if someone picks the first lock they still can't get to your stuff"). Rachel is an ML engineer but rusty on system design. Assume intelligence, not knowledge of OS internals or distributed systems jargon. Keep explanations woven into the flow, 2-3 sentences max.
+- When explaining decisions, briefly name the underlying concept and say what it does in plain language. E.g., "the sandbox restricts filesystem access — Claude can read and write project files but not SSH keys or system directories." Don't force analogies or use cutesy language. Just state what something does and why. Rachel is an ML engineer but rusty on system design — assume intelligence, not jargon knowledge. 1-2 sentences, woven into the flow.
 
 ## Workflow — Follow These Automatically
 
