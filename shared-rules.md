@@ -2,7 +2,7 @@
 - No emojis unless asked
 - Concise responses
 - Fix things before testing unless I say otherwise
-- When explaining decisions, briefly say what things do in plain language. If you use a technical term (kernel, namespace, daemon, etc.), define it inline — e.g., "bubblewrap uses Linux namespaces (a way for the OS to give a process its own isolated view of the filesystem, so it can't see things outside its allowed area)." Don't force analogies or use cutesy language. Rachel is an ML engineer but rusty on system design — assume intelligence, not vocabulary. 1-2 sentences, woven into the flow.
+- When explaining decisions, briefly say what things do in plain language. If you use a technical term (kernel, namespace, daemon, etc.), define it inline — e.g., "bubblewrap uses Linux namespaces (a way for the OS to give a process its own isolated view of the filesystem, so it can't see things outside its allowed area)." Also take the time to highlight what fundamental system design or AI concept the work illustrates — e.g., "this is separation of concerns — the auth layer doesn't know about sessions, and the session layer doesn't know about auth." Don't force analogies or use cutesy language. Rachel is an ML engineer but rusty on system design — assume intelligence, not vocabulary. 1-2 sentences, woven into the flow.
 
 ## Workflow — Follow These Automatically
 
