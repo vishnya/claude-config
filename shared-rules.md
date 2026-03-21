@@ -72,7 +72,7 @@ Rachel works across multiple devices (Mac, phone via claude-web, remote server).
 
 | Project | Mac path | Server path | Remote | Branch |
 |---------|----------|-------------|--------|--------|
-| Locus | ~/code/locus/ | ~/repos/locus/ | locus | main |
+| Pancake | ~/code/pancake/ | ~/repos/pancake/ | pancake | main |
 | Anki Fox | ~/code/anki_fox/ | ~/repos/anki-fox/ | anki-fox | main |
 | Polymarket Trends | ~/code/polymarket_trends/ | ~/repos/polymarket-trends/ | polymarket-trends | main |
 | Walkie | ~/code/walkie/ | ~/repos/walkie/ | walkie | master |
