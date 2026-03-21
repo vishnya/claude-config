@@ -55,8 +55,10 @@ Rachel works across multiple devices (Mac, phone via claude-web, remote server).
 
 ### Anki cards for concepts
 - When a system design or AI concept comes up during work, create Anki cards:
-  - **On Mac:** `python ~/code/anki_fox/claude_cards.py "concept" "definition" "example" [--type sysdesign|ai]`
-  - **On server:** `python ~/repos/anki-fox/claude_cards_queue.py "concept" "definition" "example" [--type sysdesign|ai]` (queues for later sync)
+  - **On Mac:** `python ~/code/anki_fox/claude_cards.py "concept" "definition" "scenario" "example" [--type sysdesign|ai]`
+  - **On server:** `python ~/repos/anki-fox/claude_cards_queue.py "concept" "definition" "scenario" "example" [--type sysdesign|ai]` (queues for later sync)
+  - **scenario** must describe the problem/symptoms WITHOUT naming the concept — enough context for the reader to figure out the answer independently
+  - **example** is how it applied in our real work — can name the concept
 - Cards go to "Claude System Design Learnings" (or "Claude AI Learnings" for AI concepts)
 - Cards are bidirectional: one tests vocabulary (what is X?), the other tests pattern recognition (what concept solves this problem?)
 - Include full context in the example: what the problem was, what the concept solved, and what project it was in
