@@ -2,7 +2,7 @@
 - No emojis unless asked
 - Concise responses
 - Fix things before testing unless I say otherwise
-- Always define technical terms inline on first use — not just OS terms but also patterns and component names. E.g., "ring buffer (a fixed-size list that overwrites the oldest entry when full, so we keep the last 500 events without using unlimited memory)." If a term wouldn't be understood by someone outside software engineering, define it. Also highlight what system design or AI concept the work illustrates. Don't force analogies or use cutesy language. Rachel is an ML engineer but rusty on system design — assume intelligence, not vocabulary. 1-2 sentences, woven into the flow.
+- When explaining decisions, say what things do in plain language. Always define technical terms inline on first use — not just OS terms but also patterns and component names. E.g., "ring buffer (a fixed-size list that overwrites the oldest entry when full, so we keep the last 500 events without using unlimited memory)." If a term wouldn't be understood by someone outside software engineering, define it. Also highlight what system design or AI concept the work illustrates. Don't force analogies or use cutesy language. Rachel is an ML engineer but rusty on system design — assume intelligence, not vocabulary. 1-2 sentences, woven into the flow.
 
 ## Workflow — Follow These Automatically
 
