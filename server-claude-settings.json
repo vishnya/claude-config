@@ -1,0 +1,68 @@
+{
+  "model": "opus[1m]",
+  "permissions": {
+    "defaultMode": "acceptEdits",
+    "allow": [
+      "Read",
+      "Edit",
+      "Write",
+      "Glob",
+      "Grep",
+      "Bash(git *)",
+      "Bash(npm *)",
+      "Bash(npx *)",
+      "Bash(node *)",
+      "Bash(python *)",
+      "Bash(uv *)",
+      "Bash(pytest *)",
+      "Bash(pip *)",
+      "Bash(ls *)",
+      "Bash(cat *)",
+      "Bash(mkdir *)",
+      "Bash(cp *)",
+      "Bash(mv *)",
+      "Bash(find *)",
+      "Bash(grep *)",
+      "Bash(rg *)",
+      "Bash(wc *)",
+      "Bash(sort *)",
+      "Bash(head *)",
+      "Bash(tail *)",
+      "Bash(diff *)",
+      "Bash(chmod *)",
+      "Bash(cd *)",
+      "Bash(echo *)",
+      "Bash(systemctl *)",
+      "Bash(journalctl *)",
+      "Bash(gh *)",
+      "Bash(caddy *)"
+    ],
+    "deny": [
+      "Bash(sudo rm -rf /)",
+      "Bash(curl * | bash*)",
+      "Bash(wget * | bash*)"
+    ]
+  },
+  "sandbox": {
+    "enabled": true,
+    "autoAllowBashIfSandboxed": true,
+    "filesystem": {
+      "denyRead": [],
+      "allowRead": ["/home/claude", "/tmp", "/etc/caddy", "/etc/systemd"],
+      "denyWrite": ["/etc", "/usr", "/bin", "/sbin", "/home/claude/.ssh/id_*"],
+      "allowWrite": ["/home/claude", "/tmp"]
+    },
+    "network": {
+      "allowedDomains": [
+        "github.com",
+        "*.github.com",
+        "*.githubusercontent.com",
+        "registry.npmjs.org",
+        "pypi.org",
+        "*.pypi.org",
+        "files.pythonhosted.org",
+        "api.anthropic.com"
+      ]
+    }
+  }
+}
