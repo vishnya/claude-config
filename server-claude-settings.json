@@ -74,9 +74,9 @@
     "autoAllowBashIfSandboxed": true,
     "filesystem": {
       "denyRead": [],
-      "allowRead": ["/home/claude", "/tmp", "/etc/caddy", "/etc/systemd"],
-      "denyWrite": ["/etc", "/usr", "/bin", "/sbin", "/home/claude/.ssh/id_*"],
-      "allowWrite": ["/home/claude", "/tmp"]
+      "allowRead": ["/home/rachel", "/tmp", "/etc/caddy", "/etc/systemd"],
+      "denyWrite": ["/etc", "/usr", "/bin", "/sbin", "/home/rachel/.ssh/id_*"],
+      "allowWrite": ["/home/rachel", "/tmp"]
     },
     "network": {
       "allowedDomains": [
